@@ -11,7 +11,7 @@ class Clinvk < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/signalridge/clinvoker/releases/download/v0.2.0/clinvoker_0.2.0_darwin_amd64.tar.gz"
-      sha256 "d36279772822f4b482dac080074c6325e98e6fdc9a32c92680cf91360517f030"
+      sha256 "381acafed056d75896b5b1d411d819fc3549c90e4f0f381f431faf6fbde6a023"
 
       def install
         bin.install "clinvk"
@@ -19,7 +19,7 @@ class Clinvk < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/signalridge/clinvoker/releases/download/v0.2.0/clinvoker_0.2.0_darwin_arm64.tar.gz"
-      sha256 "9b9989caa91e0b8bf6dd4a0dd31420ae57d1038b24833cc9152f6672c13400ec"
+      sha256 "276f008f66b3214ad1589898565e36620750a7668879ffb6a6136c7a4660fc2a"
 
       def install
         bin.install "clinvk"
@@ -30,14 +30,14 @@ class Clinvk < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/signalridge/clinvoker/releases/download/v0.2.0/clinvoker_0.2.0_linux_amd64.tar.gz"
-      sha256 "2808d3dcb4681c0917de16ec5fe08b292ddca4ed27194a0520438d12bf06fc9b"
+      sha256 "8ba29267e08f7cd0731378d2852f9ca1fefe9a88646ba6f04bbdeb500e64e7fa"
       def install
         bin.install "clinvk"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/signalridge/clinvoker/releases/download/v0.2.0/clinvoker_0.2.0_linux_arm64.tar.gz"
-      sha256 "c65f3c0693f8964740dfa5744726a4369079be63de9cda9b6c4264c10ed7a697"
+      sha256 "d6bd7da9caf2a6808f477004bf1e4499ca4d1039b861c71975b1e7df60fa1235"
       def install
         bin.install "clinvk"
       end
