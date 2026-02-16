@@ -5,21 +5,21 @@
 class Clinvk < Formula
   desc "Unified AI CLI wrapper for multiple backends"
   homepage "https://github.com/signalridge/clinvoker"
-  version "0.4.1"
+  version "0.5.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/signalridge/clinvoker/releases/download/v0.4.1/clinvoker_0.4.1_darwin_amd64.tar.gz"
-      sha256 "336787d34eb75643aad97d16d01168fff0931137f60475649b647ddada7cdb40"
+      url "https://github.com/signalridge/clinvoker/releases/download/v0.5.0/clinvoker_0.5.0_darwin_amd64.tar.gz"
+      sha256 "bc7dfd7b994224de0509e2185a8b6b93dba7412e6035e39d06434b79579ea0f2"
 
       def install
         bin.install "clinvk"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/signalridge/clinvoker/releases/download/v0.4.1/clinvoker_0.4.1_darwin_arm64.tar.gz"
-      sha256 "eb580ab8958f7200800843975ff3e34db7f5be2e2d85c9d5e753b8e379c71024"
+      url "https://github.com/signalridge/clinvoker/releases/download/v0.5.0/clinvoker_0.5.0_darwin_arm64.tar.gz"
+      sha256 "a09508c3bbf6cdb0642236f999f5be07217a47c779cc8d3281e3f2abdeefcdb8"
 
       def install
         bin.install "clinvk"
@@ -29,15 +29,15 @@ class Clinvk < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/signalridge/clinvoker/releases/download/v0.4.1/clinvoker_0.4.1_linux_amd64.tar.gz"
-      sha256 "46513fae6a7aa5b05b3411edb74ed4c8e5fffdd62181221c7573dffb0a80586f"
+      url "https://github.com/signalridge/clinvoker/releases/download/v0.5.0/clinvoker_0.5.0_linux_amd64.tar.gz"
+      sha256 "36cf7b45b90d4edc995ebd71c028ea57cced93198c9c747fa889a24f37f7a7ed"
       def install
         bin.install "clinvk"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/signalridge/clinvoker/releases/download/v0.4.1/clinvoker_0.4.1_linux_arm64.tar.gz"
-      sha256 "5c3099d11b56a3636ca36757471fe37d5d45caa8c9bb672c21ee6111f3e0b5ae"
+      url "https://github.com/signalridge/clinvoker/releases/download/v0.5.0/clinvoker_0.5.0_linux_arm64.tar.gz"
+      sha256 "d8a29fdc77f9377a440f78335c60a170fd228cd397b8f7e43479202dbcf51f70"
       def install
         bin.install "clinvk"
       end
