@@ -4,12 +4,12 @@ cask "slipway" do
 
   on_macos do
     on_intel do
-      sha256 "9b4bfbff2d5223d02eb570daa27679b84e2eb967e4ce3c3ef63d250ef77fd2b2"
+      sha256 "cdd546d1ad451e0f5a6d86353b6941465dbe3b3d6c51731b7cca093cc92ec9fb"
       url "https://github.com/signalridge/slipway/releases/download/v#{version}/slipway_#{version}_darwin_amd64.tar.gz",
         verified: "github.com/signalridge/slipway/"
     end
     on_arm do
-      sha256 "f81c85d186eabaecbd4500522cf2700d28f8a79dedc5f1bb10f5e259f67161db"
+      sha256 "915678a3dd5a0fb21b010a6805a2d6fa378d6aa8b9033675210e1bc679978703"
       url "https://github.com/signalridge/slipway/releases/download/v#{version}/slipway_#{version}_darwin_arm64.tar.gz",
         verified: "github.com/signalridge/slipway/"
     end
@@ -17,12 +17,12 @@ cask "slipway" do
 
   on_linux do
     on_intel do
-      sha256 "f19cdc10c7fa1598b23b1fdb77397826e04f7be6a19575206dbdd55fe6c34c09"
+      sha256 "88c74d5bc427bf0c67489a647f51c3889ca1463cebfd8f8b467f2e289a8d809d"
       url "https://github.com/signalridge/slipway/releases/download/v#{version}/slipway_#{version}_linux_amd64.tar.gz",
         verified: "github.com/signalridge/slipway/"
     end
     on_arm do
-      sha256 "441a3a8f3b35b396fe221acff817243455689d13a86b2e9ad7ef0b590caa4ef8"
+      sha256 "68b7e4f4d8f9b6eec85898e2adc2b76e30289f08ef9b56bbb60b74f8168084be"
       url "https://github.com/signalridge/slipway/releases/download/v#{version}/slipway_#{version}_linux_arm64.tar.gz",
         verified: "github.com/signalridge/slipway/"
     end
